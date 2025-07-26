@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Me - Aadi Kalra</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #ffe4ec, #e3f6f5);
-      margin: 0;
-      padding: 0;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glassy Profile Card</title>
+
+body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
       display: flex;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
+      justify-content: center;
     }
-    .card {
-      background-color: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-      max-width: 500px;
+
+.card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 2rem;
+      border-radius: 1rem;
+      width: 300px;
       text-align: center;
+      color: #fff;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
     }
-    h1 {
-      color: #e91e63;
+
+.card:hover {
+      transform: scale(1.05);
     }
-    p {
-      font-size: 16px;
-      color: #333;
-      line-height: 1.6;
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 1rem;
     }
-    .tags {
-      margin-top: 15px;
+.name {
+      font-size: 1.5rem;
+      font-weight: bold;
     }
-    .tag {
-      display: inline-block;
-      background-color: red;
-      color: green;
-      padding: 5px 10px;
-      margin: 5px;
-      border-radius: 20px;
-      font-size: 14px;
+
+    .role {
+      font-size: 1rem;
+      color: #dcdcdc;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      padding: 0.5rem 1rem;
+      background-color: #ffffff33;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ffffff55;
     }
   </style>
 </head>
 <body>
 
   <div class="card">
-    <h1>Hello, I'm Aadi 👋</h1>
-    <p>
-      I'm a tech enthusiast currently exploring the world of Python, Django, and Data Structures.<br>
-      With experience in Java and Spring Boot, I love building backend systems and solving real-world problems through code.<br>
-      I'm also a GSSoC 2025 Contributor, passionate about open-source and continuous learning.
-    </p>
-    <div class="tags">
-      <span class="tag">Python</span>
-      <span class="tag">Django</span>
-      <span class="tag">Java</span>
-      <span class="tag">Spring Boot</span>
-      <span class="tag">GSSoC 2025</span>
-    </div>
+    <img src="https://i.pravatar.cc/100" alt="avatar" class="avatar" />
+    <div class="name">Seyanshu Mukherjee</div>
+    <div class="role">Aspiring Software Developer</div>
+    <button class="btn">Connect</button>
   </div>
 
 </body>
 </html>
+
 
